@@ -21,7 +21,8 @@
         //appId: 'BH4D9OD16A',
         apiKey: '0a75952972806d9ad07e387d08e9cc4c',
         indexName: 'vuejs_jp',
-        inputSelector: selector
+        inputSelector: selector,
+        algoliaOptions: { facetFilters: ['version:v1'] }
       })
     })
   }
