@@ -1,10 +1,10 @@
 update:
 	rm db.json
-	hexo generate
+	node_modules/.bin/hexo generate
 	cp -R ./todomvc public/examples
 
 deploy: update
-	hexo deploy
+	node_modules/.bin/hexo deploy
 
 test:
 	npm test
@@ -12,7 +12,7 @@ test:
 bump:
 	cd ../vue && \
 		git checkout -- dist && \
-		git checkout master && \
+		git checkout v1.0.28 && \
 		npm run build && \
 		npm run build-test > /dev/null
 	cp ../vue/dist/vue.min.js themes/vue/source/js/vue.min.js
