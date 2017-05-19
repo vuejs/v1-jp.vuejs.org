@@ -46,6 +46,7 @@ $ hexo server
 - [haru01](https://github.com/haru01)
 - [hrysd](https://github.com/hrysd)
 - [hypermkt](https://github.com/hypermkt)
+- [itkrt2y](https://github.com/itkrt2y)
 - [KangYoosam](https://github.com/KangYoosam)
 - [kaorun343](https://github.com/kaorun343)
 - [kuy](https://github.com/kuy)
