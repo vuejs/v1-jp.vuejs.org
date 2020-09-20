@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta name="generator" content="Hexo 3.9.0">
+        <title>Vue.js 2.0 の発表 - vue.js</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js" rel="stylesheet" type="text/css">
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/css/page.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46852172-1', 'vuejs.org');
+  ga('send', 'pageview');
+</script>
+        <script src="/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/">
+        <img src="/images/logo.png">
+        <span>Vue.js</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link">ガイド</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">例</a></li>
+<li><a href="/blog/" class="nav-link">ブログ</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">コミュニティ</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">フォーラム</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">チャット</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+</div>
+
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link">ガイド</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">例</a></li>
+<li><a href="/blog/" class="nav-link">ブログ</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">コミュニティ</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">フォーラム</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">チャット</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+    <div class="list">
+        <h2>
+            Recent Posts
+            <a href="/atom.xml" target="_blank" style="vertical-align: middle; margin-left: 5px">
+                <img src="/images/feed.png" style="width:15px;height:15px">
+            </a>
+        </h2>
+        <ul style="padding:0">
+        
+            <li>
+                <a href="/2016/11/03/retiring-vue-resource/" class="sidebar-link">vue-resource の引退について</a>
+            </li>
+        
+            <li>
+                <a href="/2016/10/01/here-2.0/" class="sidebar-link">Vue.js 2.0 が来ました！</a>
+            </li>
+        
+            <li>
+                <a href="/2016/04/27/announcing-2.0/" class="sidebar-link current">Vue.js 2.0 の発表</a>
+            </li>
+        
+            <li>
+                <a href="/2016/03/14/march-update/" class="sidebar-link">2016年3月最新情報</a>
+            </li>
+        
+            <li>
+                <a href="/2016/02/06/common-gotchas/" class="sidebar-link">よくある初心者の落とし穴</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/28/vue-cli/" class="sidebar-link">vue-cli を発表</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/28/why-no-template-url/" class="sidebar-link">Vue.js が templateURL をサポートしない理由</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/26/1.0.0-release/" class="sidebar-link">Vue.js 1.0.0 リリースしました</a>
+            </li>
+        
+            <li>
+                <a href="/2015/06/11/012-release/" class="sidebar-link">Vue.js 0.12 released!</a>
+            </li>
+        
+            <li>
+                <a href="/2014/12/08/011-component/" class="sidebar-link">0.11 Component Tips</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <div id="ad">
+  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
+</div>
+
+    <h1>Vue.js 2.0 の発表</h1>
+    <h4>Apr 27, 2016</h4>
+    <p>本日、多くのエキサイティングな改善と新しい機能を盛り込んだ、 Vue.js 2.0 の最初のパブリックプレビュー (public preview) を発表してゾクゾクしています。何が起こっているのかのぞいてみましょう！</p>
+<h2 id="さらにスリム、さらに高速"><a href="#さらにスリム、さらに高速" class="headerlink" title="さらにスリム、さらに高速"></a>さらにスリム、さらに高速</h2><p>Vue.js は軽くて速いままでいることに常に焦点を当てて来ましたが、2.0 はさらにそれを推し進めます。レンダリングレイヤは、現在軽量な仮想 DOM 実装 (<a href="https://github.com/paldepind/snabbdom" target="_blank" rel="noopener">Snabbdom</a>) に基づいており、初期レンダリング速度とメモリ消費量は大抵のシナリオにおいて 2 〜 4 倍まで改善します(<a href="https://github.com/vuejs/vue/tree/next/benchmarks" target="_blank" rel="noopener">これらのベンチマーク</a>を調べてみてください)。テンプレートから仮想 DOM にするコンパイラとランタイムは分離することができ、そのため、テンプレートをプリコンパイルしたり、ランタイムだけによるあなたのアプリケーションを提供できます。min+gzip されたランタイムは 12 キロバイト未満です (参考として、React 15 は min+gzip で 44 キロバイトです)。また、コンパイラはブラウザ上で動作します。これは、以前と同様に、script タグを差し込むだけでハッキングを開始できることを意味します。ビルドにコンパイラを含めた場合でも、ファイルサイズは 17 キロバイト (min+gzip) にとどまり、現在の 1.x ビルドよりもまだ軽量です。</p>
+<h2 id="普通の-Virtual-DOM-ではありません"><a href="#普通の-Virtual-DOM-ではありません" class="headerlink" title="普通の Virtual-DOM ではありません"></a>普通の Virtual-DOM ではありません</h2><p>現在、非常に多くの実装があるので仮想 DOM は退屈に聞こえますが、これは違います。Vue のリアクティブシステムと組み合わせることで、あなたは何もすることもなく、形にとらわれない最適化された再レンダリングを提供します。各コンポーネントはレンダリング中にそのリアクティブな依存関係を追跡するため、再レンダリングするときシステムは正確に知っており、<code>shouldComponentUpdate</code> または不変(immutable)なデータは必要ありません。<strong>それだけで動作します</strong>。</p>
+<p>また、Vue 2.0 はテンプレートから仮想 DOM にコンパイルするフェーズにいくつかの高度な最適化を適用します:</p>
+<ol>
+<li><p>静的なクラス名と属性を検出し、その結果それらは最初のレンダリング後、差分(diff) を取ることはありません:</p>
+</li>
+<li><p>最大限の静的なサブツリー(動的バインディングなしのサブツリー)と render 関数からそれらを巻き上げます。このため、それぞれにおける再レンダリングは、直接まったく同じ仮想 Node を再利用し、差分検出をスキップします。</p>
+</li>
+</ol>
+<p>これらの高度な最適化は、JSX を使用するとき、通常 Babel プラグインを介して達成することができますが、Vue 2.0 でブラウザ内のコンパイラを使用してそれらを得ることができます。</p>
+<p>新しいレンダリングシステムはまた、あなたのデータを凍結したり手動で強制的に更新することによって、リアクティブの転換を無効にすることができ、本質的に再レンダリング処理をあなたに完全に制御を与えます。</p>
+<p>これらの技術を組み合わせると、Vue 2.0 は複雑なアプリケーションに対して非常に高速なアップデートを保証し、開発者から最小限の労力を必要とします。</p>
+<h2 id="テンプレート、JSX-、または-Hyperscript？"><a href="#テンプレート、JSX-、または-Hyperscript？" class="headerlink" title="テンプレート、JSX 、または Hyperscript？"></a>テンプレート、JSX 、または Hyperscript？</h2><p>開発者はテンプレート 対 JSX に強い感情を持つ傾向があります。一方では、テンプレートは HTML に近いです。それらは、あなたのアプリケーションのセマンティックな構造により良いマッピングをし、設計とレイアウトとスタイリングについて視覚的に考えることが遥かに容易になります。一方で、JSX / hyperscript は計算完備(turing-complete)の完全な表現力を提供しつつ、テンプレートは DSL に制限されています。</p>
+<p>デザイナー/開発者のハイブリッドであること、私はテンプレートで自分のインターフェイスのほとんどを書くことを好みますが、特定の場合においては、JSX / hyperscript の柔軟性を見逃しません。例としては、プログラム的に子を処理するコンポーネントを書き込む、テンプレートベースの slot 機構を備えた実現可能なものです。</p>
+<p>さて、なぜ、両方持っていないのでしょうか？ Vue 2.0 では、使い慣れたテンプレートの構文を使い続けることができ、また、いつでもテンプレートの DSL によって制約を感じるたびに、仮想 DOM に飛び降りることができます。<code>template</code> オプションの代わりに、<code>render</code> 関数でそれを置き換えます。あなたのテンプレートで特別な <code>&lt;render&gt;</code> タグを使用してレンダリング関数を埋め込むことができます！同じフレームワークにおいて、両方の長所があります。</p>
+<h2 id="サーバサイドレンダリングのストリーミング"><a href="#サーバサイドレンダリングのストリーミング" class="headerlink" title="サーバサイドレンダリングのストリーミング"></a>サーバサイドレンダリングのストリーミング</h2><p>仮想 DOM への移行では、Vue 2.0 は自然にクライアントサイド hydration によるサーバサイドレンダリングをサポートします。現在主流のサーバサイドレンダリング実装の辛いところは、React のような、アプリケーションが複雑な場合、サーバのイベントループをブロックすることができるため、レンダリングは同期であることです。同期的なサーバサイドレンダリングは、クライアント上のコンテンツに悪影響を与える可能性があります。Vue 2.0 は形にとらわれないサーバサイドレンダリングのストリーミングを提供するため、あなたのコンポーネントをレンダリングすることができ、読み込み可能なストリームを取得し、直接 それを HTTP レスポンスにパイプすることができます。これは、あなたのサーバが機敏に応答でき、あなたのユーザーにより速くレンダリングされたコンテンツを提供するのを保証します。</p>
+<h2 id="より多くの可能性をロックしません"><a href="#より多くの可能性をロックしません" class="headerlink" title="より多くの可能性をロックしません"></a>より多くの可能性をロックしません</h2><p>新しいアーキテクチャでは、模索するための多くの可能性があります。例えば、モバイル上でネイティブインターフェイスにレンダリングできます。現在我々は、中国最大の技術企業「アリババグループ」でのエンジニアによって維持されているプロジェクト <a href="http://alibaba.github.io/weex/" target="_blank" rel="noopener">weex</a> をネイティブレンダリングのバックエンドとして使用する、Vue.js 2.0 の移植について模索しています。ReactNative 内部で実行するために Vue 2.0 の仮想 DOM を適合させることは技術的に可能です。我々は、どうなっていくのか興奮しています！</p>
+<h2 id="互換性そして何を次に期待するのか"><a href="#互換性そして何を次に期待するのか" class="headerlink" title="互換性そして何を次に期待するのか"></a>互換性そして何を次に期待するのか</h2><p>Vue.js 2.0 はまだ pre-alpha ですが、<a href="https://github.com/vuejs/vue/tree/next/" target="_blank" rel="noopener">ここ</a>でソースコードを調べることができます。完全な書き直しにも関わらず、1.0 API は、いくつかの意図的な非推奨の例外をのぞいて、1.0 と互換性があります。<a href="https://github.com/vuejs/vue/tree/next/examples" target="_blank" rel="noopener">2.0 で書かれた同じ公式の example</a>を調べてみてください。あまり変わっていないことを確認できるでしょう！</p>
+<p>機能を非推奨とすることは、最大限の開発者の生産性に対して可能な限り単純なAPIを提供するための継続的な努力の一環です。1.0 と 2.0 の機能比較を<a href="https://github.com/vuejs/vue/wiki/2.0-features" target="_blank" rel="noopener">ここ</a>で調べることができます。これは、あなたがこれらの廃止機能のいくつかヘビーに使用している場合、恐らくアプリケーションを移行するためにいくつか労力を要することを意味しますが、将来においてより詳細な移行ガイドを提供するつもりです。</p>
+<p>まだ、完了するために残っている仕事はかなりあります。我々は十分なテストカバレッジに達した時、最初の alpha をリリースする予定であり、5月末または6月頭までに beta を目指しています。多くのテストに加えて、我々は、ライブラリ (vue-router、Vuex、vue-loader、vuerify など) のサポートのアップデートも必要です。現在のところ、Vue.js 2.0 ですぐに使えるのは Vuex のみですが、我々が 2.0 を提供するときには、全てが一緒にスムーズに動作するでしょう。</p>
+<p>我々は、1.x についても忘れていません！ 1.1 は、9ヶ月のセキュリティアップデートと6ヶ月の致命的なバグ修正の LTS (Long-term Support) 期間によって、2.0 beta と並んでリリースされます。また、2.0 にアップグレードするためにあなたが準備できるよう、任意の非推奨の警告も提供する予定です。乞うご期待下さい！</p>
+
+</div>
+
+                
+            </div>
+            <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/common.js"></script>
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/tnir/vuejs-012-jp-outdated-docs-modal@012-jp-v2.1.0/prompt.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

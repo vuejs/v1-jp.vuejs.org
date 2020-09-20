@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta name="generator" content="Hexo 3.9.0">
+        <title>vue-resource の引退について - vue.js</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js" rel="stylesheet" type="text/css">
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/css/page.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46852172-1', 'vuejs.org');
+  ga('send', 'pageview');
+</script>
+        <script src="/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/">
+        <img src="/images/logo.png">
+        <span>Vue.js</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link">ガイド</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">例</a></li>
+<li><a href="/blog/" class="nav-link">ブログ</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">コミュニティ</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">フォーラム</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">チャット</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+</div>
+
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link">ガイド</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">例</a></li>
+<li><a href="/blog/" class="nav-link">ブログ</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">コミュニティ</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">フォーラム</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">チャット</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+    <div class="list">
+        <h2>
+            Recent Posts
+            <a href="/atom.xml" target="_blank" style="vertical-align: middle; margin-left: 5px">
+                <img src="/images/feed.png" style="width:15px;height:15px">
+            </a>
+        </h2>
+        <ul style="padding:0">
+        
+            <li>
+                <a href="/2016/11/03/retiring-vue-resource/" class="sidebar-link current">vue-resource の引退について</a>
+            </li>
+        
+            <li>
+                <a href="/2016/10/01/here-2.0/" class="sidebar-link">Vue.js 2.0 が来ました！</a>
+            </li>
+        
+            <li>
+                <a href="/2016/04/27/announcing-2.0/" class="sidebar-link">Vue.js 2.0 の発表</a>
+            </li>
+        
+            <li>
+                <a href="/2016/03/14/march-update/" class="sidebar-link">2016年3月最新情報</a>
+            </li>
+        
+            <li>
+                <a href="/2016/02/06/common-gotchas/" class="sidebar-link">よくある初心者の落とし穴</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/28/vue-cli/" class="sidebar-link">vue-cli を発表</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/28/why-no-template-url/" class="sidebar-link">Vue.js が templateURL をサポートしない理由</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/26/1.0.0-release/" class="sidebar-link">Vue.js 1.0.0 リリースしました</a>
+            </li>
+        
+            <li>
+                <a href="/2015/06/11/012-release/" class="sidebar-link">Vue.js 0.12 released!</a>
+            </li>
+        
+            <li>
+                <a href="/2014/12/08/011-component/" class="sidebar-link">0.11 Component Tips</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <div id="ad">
+  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
+</div>
+
+    <h1>vue-resource の引退について</h1>
+    <h4>Nov 3, 2016</h4>
+    <p>このブログは<a href="https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4#.33jmtzpgb" target="_blank" rel="noopener">こちら</a>の翻訳ブログです。</p>
+<p>Vue のユーザーとして、皆さんの多くが使用している可能性がある <a href="https://github.com/vuejs/vue-resource" target="_blank" rel="noopener"><em>vue-resource</em></a> は Vue アプリケーションでの ajax リクエストを処理するためのものです。<br>長い間それは Vue 用の「公式」ajax ライブラリとして考えられてきましたが、本日私たちはそれを公式推奨という状態から引退させました。</p>
+<p>vuejs organization のもとに列挙されているものの、<em>vue-resource</em> はほぼ完全に <a href="https://github.com/pagekit" target="_blank" rel="noopener">PageKit チーム</a>によって書かれ、保守されてきました。<br>私たちが初期の頃 vuejs organization にそれを移したのは、コミュニティが本質的な問題を解決するためのライブラリを寄付することは良いことだと思ったからであり、また私たちは PageKit チームがプロジェクトに投下したすべての作業に大いに感謝しています。<br>しかし、時が経つにつれ私たちは Vue 用の「公式 ajax ライブラリ」は実は必要ではないとの結論に至りました。なぜなら：</p>
+<ol>
+<li>ルーティングや 状態管理とは異なり、ajax は Vue のコアとの緊密な統合を必要とする問題領域ではありません。<br>ほとんどの場合純粋な 3rd パーティのソリューションが同様にうまく問題を解決できます。</li>
+<li>同じ問題を解決するための優れた 3rd パーティの ajax ライブラリがあり、より積極的に改良/保守されていて、かつuniversal/isomorphic（Node とブラウザの両方で動作し、そのことはサーバーサイドレンダリング用途での Vue 2.0 にとって重要）になるよう設計されています。</li>
+<li>(1) と (2) であるので、vue-resource の現状を維持することは二度手間かつ不要なメンテナンスの負担をもたらしていることが明らかです。<br>私たちが vue-resource の問題の解決に費やしていた時間を他のスタック（訳注：課題リスト）の改善により費やすことが可能となります。</li>
+</ol>
+<h2 id="Q-amp-A"><a href="#Q-amp-A" class="headerlink" title="Q&amp;A"></a>Q&amp;A</h2><h3 id="これは-vue-resource-の廃止を意味していますか？"><a href="#これは-vue-resource-の廃止を意味していますか？" class="headerlink" title="これは vue-resource の廃止を意味していますか？"></a>これは vue-resource の廃止を意味していますか？</h3><p>いいえ。もはや「公式推奨」の一部ではないということだけです。<br>リポジトリは pagekit/vue-resource に戻され、開発は継続されるでしょう。<br>このライブラリの長期計画を決定するのは PageKit チームの役目です。</p>
+<h3 id="私は使用を中止する必要がありますか？"><a href="#私は使用を中止する必要がありますか？" class="headerlink" title="私は使用を中止する必要がありますか？"></a>私は使用を中止する必要がありますか？</h3><p>あなたがそれに満足している場合、使い続けることは全くもって結構です。<br>移行する可能性のある理由としては、保守、universal/isomorphic サポートと、より高度な機能（訳注：が欲しい場合）が含まれます。</p>
+<h3 id="私は次に何を使うべきですか？"><a href="#私は次に何を使うべきですか？" class="headerlink" title="私は次に何を使うべきですか？"></a>私は次に何を使うべきですか？</h3><p>何を好んで選択するかはあなたの自由（単に（訳注：jQuery の）<code>$.ajax</code> でさえも）ですが、デフォルトの推奨として ― 特に新規ユーザー向けに ― 私たちは <a href="https://github.com/mzabriskie/axios" target="_blank" rel="noopener">Axios</a> を調べることをお勧めします。<br>これは、現在もっとも人気がある HTTP クライアントライブラリの一つであり、 vue-resource が提供するほとんどすべてを非常によく似た API でカバーしています。<br>加えて、それはuniversalであり、キャンセルをサポートし、かつ TypeScript の定義を持っています。<br>もし低水準なものを好む場合は、単に標準の <a href="https://developer.mozilla.org/ja/docs/Web/API/Fetch_API" target="_blank" rel="noopener">fetch API</a> が使用できます。<br>ブラウザと Node の両方で動作するポリフィルである <a href="https://github.com/matthew-andrews/isomorphic-fetch" target="_blank" rel="noopener">isomorphic-fetch</a> を調べてみてください。</p>
+<h3 id="Vue-で-Axios-を使用するための-Tips"><a href="#Vue-で-Axios-を使用するための-Tips" class="headerlink" title="Vue で Axios を使用するための Tips"></a>Vue で Axios を使用するための Tips</h3><ol>
+<li>ターゲット環境が Promise をネイティブにサポートしていない場合、Axios を使用するときは独自の Promise ポリフィル(訳注：<a href="https://github.com/stefanpenner/es6-promise" target="_blank" rel="noopener">es6-promise</a> 等)を提供する必要があります。</li>
+<li>もし vue-resource のように <code>this.$http</code> としてアクセスしたい場合は、単に <code>Vue.prototype.$http = axios</code> と設定すればよいです。</li>
+</ol>
+
+</div>
+
+                
+            </div>
+            <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/common.js"></script>
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/tnir/vuejs-012-jp-outdated-docs-modal@012-jp-v2.1.0/prompt.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>

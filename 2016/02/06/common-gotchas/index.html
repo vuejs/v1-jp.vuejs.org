@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+    <head><meta name="generator" content="Hexo 3.9.0">
+        <title>よくある初心者の落とし穴 - vue.js</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Vue.js - Intuitive, Fast and Composable MVVM for building interactive interfaces.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Roboto Mono" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Dosis:300,500&text=Vue.js" rel="stylesheet" type="text/css">
+        <link href="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="/images/logo.png" type="image/x-icon">
+        <script>
+            window.PAGE_TYPE = ""
+        </script>
+        <link rel="stylesheet" href="/css/page.css">
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46852172-1', 'vuejs.org');
+  ga('send', 'pageview');
+</script>
+        <script src="/js/vue.js"></script>
+    </head>
+    <body>
+        <div id="mobile-bar">
+            <a class="menu-button"></a>
+            <a class="logo" href="/"></a>
+        </div>
+        
+            <div id="header">
+    <a id="logo" href="/">
+        <img src="/images/logo.png">
+        <span>Vue.js</span>
+    </a>
+    <ul id="nav">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link">ガイド</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">例</a></li>
+<li><a href="/blog/" class="nav-link">ブログ</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">コミュニティ</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">フォーラム</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">チャット</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+</div>
+
+            <div id="main">
+                
+                    <div class="sidebar blog">
+    <ul class="main-menu">
+        <li>
+  <form id="search-form">
+    <input type="text" id="search-query-nav" class="search-query st-default-search-input">
+  </form>
+</li>
+<li><a href="/guide/" class="nav-link">ガイド</a></li>
+<li><a href="/api/" class="nav-link">API</a></li>
+<li><a href="/examples/" class="nav-link">例</a></li>
+<li><a href="/blog/" class="nav-link">ブログ</a></li>
+<li class="nav-dropdown-container">
+  <a class="nav-link">コミュニティ</a><span class="arrow"></span>
+  <ul class="nav-dropdown">
+    <li><a href="https://github.com/vuejs/vue" class="nav-link" target="_blank">GitHub</a></li>
+    <li><a href="http://forum.vuejs.org" class="nav-link" target="_blank">フォーラム</a></li>
+    <li><a href="https://gitter.im/vuejs/vue" class="nav-link" target="_blank">チャット</a></li>
+    <li><a href="https://twitter.com/vuejs" class="nav-link" target="_blank">Twitter</a></li>
+  </ul>
+</li>
+
+
+    </ul>
+    <div class="list">
+        <h2>
+            Recent Posts
+            <a href="/atom.xml" target="_blank" style="vertical-align: middle; margin-left: 5px">
+                <img src="/images/feed.png" style="width:15px;height:15px">
+            </a>
+        </h2>
+        <ul style="padding:0">
+        
+            <li>
+                <a href="/2016/11/03/retiring-vue-resource/" class="sidebar-link">vue-resource の引退について</a>
+            </li>
+        
+            <li>
+                <a href="/2016/10/01/here-2.0/" class="sidebar-link">Vue.js 2.0 が来ました！</a>
+            </li>
+        
+            <li>
+                <a href="/2016/04/27/announcing-2.0/" class="sidebar-link">Vue.js 2.0 の発表</a>
+            </li>
+        
+            <li>
+                <a href="/2016/03/14/march-update/" class="sidebar-link">2016年3月最新情報</a>
+            </li>
+        
+            <li>
+                <a href="/2016/02/06/common-gotchas/" class="sidebar-link current">よくある初心者の落とし穴</a>
+            </li>
+        
+            <li>
+                <a href="/2015/12/28/vue-cli/" class="sidebar-link">vue-cli を発表</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/28/why-no-template-url/" class="sidebar-link">Vue.js が templateURL をサポートしない理由</a>
+            </li>
+        
+            <li>
+                <a href="/2015/10/26/1.0.0-release/" class="sidebar-link">Vue.js 1.0.0 リリースしました</a>
+            </li>
+        
+            <li>
+                <a href="/2015/06/11/012-release/" class="sidebar-link">Vue.js 0.12 released!</a>
+            </li>
+        
+            <li>
+                <a href="/2014/12/08/011-component/" class="sidebar-link">0.11 Component Tips</a>
+            </li>
+        
+        </ul>
+    </div>
+</div>
+<div class="content blog post">
+    <div id="ad">
+  <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=vuejs" id="_carbonads_js"></script>
+</div>
+
+    <h1>よくある初心者の落とし穴</h1>
+    <h4>Feb 6, 2016</h4>
+    <p>Vue.js を使い始めたユーザーからたびたび幾つかの種類の質問があります。それらの質問の回答はガイドでどこかに全て言及していますが、落とし穴にはまったときそれらはあまり目ただず、そして見つけるのは難しいです。そこで、この記事では、うまくいけば、無駄な時間を節約できるよう、それらの落とし穴についてまとめたものを紹介します！</p>
+<a id="more"></a>
+<h3 id="なぜ-DOM-更新をしないのですか？"><a href="#なぜ-DOM-更新をしないのですか？" class="headerlink" title="なぜ DOM 更新をしないのですか？"></a>なぜ DOM 更新をしないのですか？</h3><p>ほとんどの場合、あなたが Vue インスタンスのデータを変更するとき、view を更新します。しかし、2 つの稀なケースがあります:</p>
+<ol>
+<li><p>データが監視されるときに、あなたが追加する<strong>新しいプロパティ</strong>が存在しない場合。ES5 の制限とブラウザ間で一貫性のある動作を確保するために、Vue.js はプロパティの追加/削除を検出することはできません。ベストプラクティスは前もってリアクティブにする必要があるプロパティを常に宣言します。あなたが実行時にプロパティを追加または削除する必要がある場合は、グローバルな <a href="/api/#Vue-set"><code>Vue.set</code></a> または <a href="/api/#Vue-delete"><code>Vue.delete</code></a> メソッドを使用します。</p>
+</li>
+<li><p>あなたが直接インデックス(例: <code>arr[0] = val</code>) を設定、または <code>length</code> プロパティを変更することによって配列を変更する場合。同様に、Vue.js はこれらの変更をピックアップすることはできません。常に配列のインスタンスメソッドを使用することよって配列を変更、またはそれを完全に置き換えます。Vue は <code>arr.splice(index, 1, value)</code> に対するまさにシンタックスシュガーである便利メソッド <code>arr.$set(index, value)</code> を提供します。</p>
+</li>
+</ol>
+<p>参考文献: <a href="/guide/reactivity.html">リアクティブの探求</a> と <a href="/guide/list.html#配列の変化を検出">配列の変化を検出</a></p>
+<h3 id="いつ-DOM-が更新されますか？"><a href="#いつ-DOM-が更新されますか？" class="headerlink" title="いつ DOM が更新されますか？"></a>いつ DOM が更新されますか？</h3><p>Vue.js はまとめて DOM を更新するために非同期キューを使用します。これはあなたがいくつかのデータを変更するとき、DOM の更新は瞬時に発生しないことを意味します。それらはキューがフラッシュされたとき非同期に適用されます。そこで、あなたは DOM が更新されたときにどうやって知るのでしょうか？あなたがデータを変更後、<code>Vue.nextTick</code> を使用するのが正解です。キューがフラッシュされた後、あなたが渡すそのコールバック関数が一度だけ呼ばれます。</p>
+<p>参考文献: <a href="/guide/reactivity.html#非同期更新キュー">非同期更新キュー</a></p>
+<h3 id="なぜ-data-は関数として必要なのですか？"><a href="#なぜ-data-は関数として必要なのですか？" class="headerlink" title="なぜ data は関数として必要なのですか？"></a>なぜ <code>data</code> は関数として必要なのですか？</h3><p>基本的な例では、<code>data</code> は直接プレーンなオブジェクトとして宣言しています。これは、<code>new Vue()</code> によって単一のインスタンスだけが作成されるためです。しかしながら、<strong>コンポーネント</strong>を定義するときは、<code>data</code> は初期データオブジェクトを返す関数として宣言されなければなりません。なぜでしょうか？同じ定義を使用して作成された多くのインスタンスがあるからです。まだ <code>data</code> に対してプレーンなオブジェクトを使用している場合、同じオブジェクトが作成された全てのインスタンス全体を横断して<strong>参照によって共有</strong>されます！<code>data</code> 関数を提供することによって、新しいインスタンスが作成される度に、単にそれは初期データの新しいコピーを返すための関数として呼び出すことができます。</p>
+<p>参考文献: <a href="/guide/components.html#コンポーネントオプションの注意事項">コンポーネントオプションの注意事項</a></p>
+<h3 id="HTML-は小文字・大文字を区別しない"><a href="#HTML-は小文字・大文字を区別しない" class="headerlink" title="HTML は小文字・大文字を区別しない"></a>HTML は小文字・大文字を区別しない</h3><p>全ての Vue.js テンプレートは有効で、解析可能な HTML マークアップ、そして Vue.js はそのテンプレートを処理するために仕様に準拠するパーサーに依存しています。しかしながら、標準で指定された、HTML はタグと属性名がマッチする小文字・大文字を区別しません。これは <code>:myProp=&quot;123&quot;</code> のようなキャメルケース属性は<code>:myprop=&quot;123&quot;</code>としてマッチされます。経験則として、あなたは JavaScript ではキャメルケースを使用し、テンプレートでは、ケバブケースを使用すべきです。例えば、<code>myProp</code> として JavaScript で定義する prop は <code>:my-prop</code> としてテンプレートでバウンドされるべきです。</p>
+<p>参考文献: <a href="/guide/components.html#キャメルケース_対_ケバブケース">キャメルケース 対 ケバブケース</a></p>
+<p>小文字、大文字を区別しない作法において props そして コンポーネントを解決することによって、この矛盾を解消する可能性を議論しています。<a href="https://github.com/vuejs/vue/issues/2308" target="_blank" rel="noopener">ここ</a>の会話に参加しましょう。</p>
+
+</div>
+
+                
+            </div>
+            <script src="//cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+            <script src="/js/smooth-scroll.min.js"></script>
+            <script src="/js/common.js"></script>
+        
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/tnir/vuejs-012-jp-outdated-docs-modal@012-jp-v2.1.0/prompt.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        </script>
+    </body>
+</html>
