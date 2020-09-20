@@ -1,10 +1,10 @@
 update:
-	rm db.json
-	node_modules/.bin/hexo generate
+	rm -rf db.json
+	hexo generate
 	cp -R ./todomvc public/examples
 
 deploy: update
-	node_modules/.bin/hexo deploy
+	hexo deploy
 
 test:
 	npm test
